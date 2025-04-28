@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section id="Contact" class="m-b-1">
+    <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+    <div>
+        <h3 class="t-white t-center m-b-1"> Get in touch with me over Phone or email!</h3>
+        <p class="t-white t-center m-b-1">Email: sebbagdasarianz@gmail.com</p>
+        <p class="t-white t-center m-b-1">Phone: +41 78 800 87 63</p>
+        <h2 class="t-white t-center m-b-1">or</h2>
+        <h3 class="t-white t-center m-b-1">Fill out the contact form and I'll get in touch with you!</h3>
+    </div>
+
+    <div class="contact-container flex s-around items-center">
+        <div class="form" id="contactForm">
+
+            {# FEHLERMELDUNGEN ANZEIGEN #}
+            {% if messages %}
+              <div class="messages">
+                {% for message in messages %}
+                  <div class="alert">{{ message }}</div>
+                {% endfor %}
+              </div>
+            {% endif %}
+
+            <form method="post">
+                {% csrf_token %}
+                <div class="form-div">
+                    <input type="text" name="name" class="poppins" placeholder="Enter Your Name">
+                </div>
+                <div class="form-div">
+                    <input type="email" name="email" class="poppins" placeholder="Enter Your Email" required>
+                </div>
+                <div class="form-div">
+                    <input type="phone" name="number" class="poppins" placeholder="Enter Your Phone" required>
+                </div>
+                <div class="form-div">
+                    <textarea name="content" cols="30" rows="10" class="poppins" placeholder="Enter Messages"></textarea>
+                </div>
+                <button type="submit" class="btn poppins" id="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

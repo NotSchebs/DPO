@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section id="home" class="flex s-center sw-80 m-auto">
+    <div class="home-left">
+        <div class="home-content">
+            <h1 class="t-white">Sébastien Bagdasarianz</h1>
+            <h4 class="poppins">Data Science Student at FHNW</h4>
+            <div class="buttons">
+                <a href="{% static 'pdf/CV_English_11_2024 copy.pdf' %}" target="_blank">
+                    <button class="btn live poppins" id="hireme">Resume</button>
+                </a>
+                <a class="btn poppins" id="hireme" href="{% url 'about' %}" >About me</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="home-right">
+        <div class="circle" id="mainImage">
+            <img src="{% static 'images/cvpic.jpeg' %}" alt="Profile Picture">
+        </div>
+    </div>
+</section>
+
+<!-- 🧩 This part now sits alone and centered -->
+<section style="text-align: center; margin-bottom: 4rem;">
+    <h2 class="t-white">Contact me:</h2>
+    <h3 class="t-white">sebbagdasarianz@gmail.com</h3>
+</section>
+
+{% endblock %}

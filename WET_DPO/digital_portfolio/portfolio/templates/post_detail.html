@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="blog" style="padding-bottom: 4rem;">
+    <!-- Back to Blog Button -->
+    <div class="m-top">
+        <a href="{% url 'blog' %}" class="btn poppins m-top">← Back to Blog</a>
+    </div>
+    
+    <div class="t-center my-2">
+        <!-- Title -->
+        <h1 class="t-white poppins" style="margin-bottom: 2rem;">{{ post.title }}</h1>
+
+        <!-- Blog content -->
+        <div class="t-white poppins" style="max-width: 700px; margin: 0 auto; line-height: 1.8;">
+            {{ post.content|linebreaksbr }}
+        </div>
+
+        <!-- Timestamp -->
+        <p class="t-white poppins mt-3"><small>{{ post.created_at }}</small></p>
+
+    </div>
+
+    {% if post.file %}
+    <!-- File download -->
+    <div class="t-center mt-5 mb-5">
+        <p class="t-white poppins">
+            <a href="{{ post.file.url }}" class="btn" download>Download attached file</a>
+        </p>
+    </div>
+    {% endif %}
+</section>
+{% endblock %}

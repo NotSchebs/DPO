@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="blog">
+    <h1 class="t-center my-2 t-white f-2">Blog</h1>
+    <div class="blog-container flex s-center">
+        {% for post in posts %}
+        <div class="blog-item flex f-col s-center items-center">
+            <h2 class="t-white poppins">{{ post.title }}</h2>
+            <p class="t-white poppins">{{ post.content|truncatewords:25 }}</p>
+            <div class="buttons">
+                <a href="{% url 'post_detail' post.id %}" class="btn mx-1 m-top">Read More</a>
+            </div>
+        </div>
+        {% empty %}
+        <p class="t-white t-center">No blog posts yet!</p>
+        {% endfor %}
+    </div>
+</section>
+{% endblock %}

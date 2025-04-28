@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="floating-icons">
+     
+        <img src="https://skillicons.dev/icons?i=python" class="float-icon delay-0" style="top: 10%; left: 10%;">
+        <img src="https://skillicons.dev/icons?i=python" class="float-icon delay-1" style="top: 15%; left: 85%;">
+        <img src="https://skillicons.dev/icons?i=python" class="float-icon delay-2" style="top: 30%; left: 10%;">
+        <img src="https://skillicons.dev/icons?i=python" class="float-icon delay-3" style="top: 60%; left: 70%;">
+        <img src="https://skillicons.dev/icons?i=python" class="float-icon delay-4" style="top: 80%; left: 25%;">
+        <img src="https://skillicons.dev/icons?i=python" class="float-icon delay-5" style="top: 45%; left: 40%;">
+        <img src="https://skillicons.dev/icons?i=python" class="float-icon delay-6" style="top: 90%; left: 10%;">
+    
+        <img src="https://skillicons.dev/icons?i=html" class="float-icon delay-7" style="top: 20%; left: 50%;">
+        <img src="https://skillicons.dev/icons?i=css" class="float-icon delay-8" style="top: 70%; left: 90%;">
+        <img src="https://skillicons.dev/icons?i=r" class="float-icon delay-9" style="top: 10%; left: 65%;">
+        <img src="https://skillicons.dev/icons?i=java" class="float-icon delay-10" style="top: 75%; left: 35%;">
+        <img src="https://skillicons.dev/icons?i=github" class="float-icon delay-11" style="top: 50%; left: 5%;">
+        <img src="https://skillicons.dev/icons?i=gitlab" class="float-icon delay-12" style="top: 25%; left: 30%;">
+        <img src="https://skillicons.dev/icons?i=docker" class="float-icon delay-13" style="top: 60%; left: 50%;">
+        <img src="https://skillicons.dev/icons?i=arduino" class="float-icon delay-14" style="top: 85%; left: 75%;">
+    </div>
+    
+    
+
+    <!-- Navbar -->
+    <nav id="navbar" class="flex s-around bg-color">
+        
+        <div class="right-nav">
+            <ul class="flex">
+                <li><a href="{% url 'home' %}" class="t-white roboto">Home <i class="fa-solid fa-house"></i></a></li>
+                <li><a href="{% url 'about' %}" class="t-white roboto">About <i class="fa-solid fa-user"></i></a></li>
+                <li><a href="{% url 'skills' %}" class="t-white roboto">Skills <i class="fa-solid fa-code"></i></a></li>
+                <li><a href="{% url 'projects' %}" class="t-white roboto">Projects <i class="fas fa-project-diagram"></i></a></li>
+                <li><a href="{% url 'blog' %}" class="t-white roboto">Blog <i class= "fa-solid fa-blog"> </i></a></li>
+                <li><a href="{% url 'contact' %}" class="t-white roboto">Contact <i class="fa-solid fa-rocket"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Wrapper -->
+    <div id="content">
+        <main>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="{% url 'home' %}" class="poppinss">Home</a></li>
+            <li><a href="{% url 'about' %}" class="poppinss">About</a></li>
+            <li><a href="{% url 'skills' %}" class="poppinss">Skills</a></li>
+            <li><a href="{% url 'projects' %}" class="poppinss">Projects</a></li>
+            <li><a href="{% url 'blog' %}" class="poppinss">Blog</a></li>
+            <li><a href="{% url 'contact' %}" class="poppinss">Contact</a></li>
+        </ul>
+        <ul class="flex s-center w-80 font-awesome ">
+            <a href="https://www.linkedin.com/in/sebastien-bagdasarianz-905103301/" target="_blank">
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </a>
+            <a href="https://github.com/NotSchebs?tab=overview&from=2025-02-01&to=2025-02-28" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>
+            </a>
+            
+        </ul>
+        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">Sébastien Bagdasarianz</span></p>
+    </footer>
+
+</body>
+
+</html>

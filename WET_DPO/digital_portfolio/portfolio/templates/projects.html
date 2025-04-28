@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section id="Projects">
+    <h1 class="t-center my-2 t-white f-2">Projects</h1>
+
+    <div class="projects-container flex s-center">
+        <div class="projects-item flex f-col s-center items-center">
+            <h1 class="t-white poppins">Container Tracking</h1>
+
+            <p class="t-white poppins m-top">A challenge where we had to program a container tracking system able to track the route of a container truck, and its inner temperature and humidity</p>
+        
+            <img src="{% static 'images/container.png' %}" alt="Container Tracking Screenshot" class="project-image m-top" width="300">
+            
+            <div class="buttons flex s-around">
+                <a href="https://github.com/NotSchebs/Cde1-1Da_Challenge_FHNW" target="_blank" class="btn mx-1 m-top">GitHub</a>
+            </div>
+        </div>
+        
+
+        <div class="projects-item flex f-col s-center items-center">
+            <h1 class="t-white poppins">Superleague Table Prediction</h1>
+            <p class="t-white poppins">A challenge where we tried to predict the outcome of the Swiss 2024/25 Superleague table with probability, regression and statistics</p>
+            <p class="t-white poppins m-top">Language: German</p>
+
+            <img src="{% static 'images/table.png' %}" alt="Container Tracking Screenshot" class="project-image m-top" width="300">
+            <div class="buttons flex s-around">
+                <a href="https://github.com/NotSchebs/PrrChallenge" target="_blank" class="btn mx-1 m-top">GitHub</a>
+            </div>
+        </div>
+
+        <div class="projects-item flex f-col s-center items-center">
+            <h1 class="t-white poppins">Matura project</h1>
+            <p class="t-white poppins">I built a robotic arm from scratch with Arduino with no electrotechnical background</p>
+            <p class="t-white poppins m-top">Language: German</p>
+            
+            <video controls class="m-top" width="320" height="240">
+                <source src="{% static 'videos/IMG_2581 2.MOV' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            
+            <div class="buttons flex s-around m-top">
+                <a href="{% static 'pdf/Matur2019copy.pdf' %}" target="_blank" class="btn mx-1">take a look!</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<section id="Projects">
+    <h1 class="t-center my-2 t-white f-2">Ongoing Projects</h1>
+
+    <div class="projects-container flex s-center">
+        <div class="projects-item flex f-col s-center items-center">
+            <h1 class="t-white poppins">CKW-Smartmeter-Daten: Verbraucheranalysen von Haushalten</h1>
+
+            <p class="t-white poppins m-top">A project whree we analyze anonymized smart meter data from CKW using methods such as clustering, forecasting, and anomaly detection to identify consumption patterns, build predictive models, and generate data-driven insights for end users. The goal is to support energy management optimization and the development of innovative business models.</p>
+            
+            <div class="buttons flex s-around">
+                <a href="" target="_blank" class="btn mx-1 m-top">No link for now... stay tuned!</a>
+            </div>
+        </div>
+        
+
+        <div class="projects-item flex f-col s-center items-center">
+            <h1 class="t-white poppins">Climate challenge</h1>
+            <p class="t-white poppins">A challenge to show how generative AI can be used to communicate climate change impacts by building an interactive data-driven website and writing a climate data story. The project combines climate science, data analysis, and storytelling to evaluate the effectiveness and scientific validity of AI-generated content in raising public awareness about future climate scenarios.</p>
+            <p class="t-white poppins m-top">Language: German</p>
+
+            <div class="buttons flex s-around">
+                <a href="https://github.com/NotSchebs/CDK1_Klimadaten_Challenge_FHNW" target="_blank" class="btn mx-1 m-top">GitHub</a>
+            </div>
+        </div>
+        
+    </div>
+</section>
+{% endblock %}

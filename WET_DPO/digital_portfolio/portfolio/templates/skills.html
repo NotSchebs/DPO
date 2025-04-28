@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<section id="skills">
+    <h1 class="t-center my-2 t-white f-2">Skills</h1>
+    <div class="services-container flex s-around h-50">
+        
+        <!-- Penguin Image -->
+        <div class="skills-left flex s-center items-center">
+            <img src="{% static 'images/pingu.png' %}" alt="pingu">
+        </div>
+
+        <!-- Tech Grid -->
+        <div class="skills-right flex items-center">
+            <div class="tech-card">
+                <h2 class="t-white">Technologies I have worked with</h2>
+                <div class="tech-icons-grid">
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=python" alt="Python">
+                        <span class="tooltiptext">Python – confident🎓🧪</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=r" alt="R">
+                        <span class="tooltiptext">R – intermediate 🎓</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=java" alt="Java">
+                        <span class="tooltiptext">Java – intermediate 🎓</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=html" alt="HTML">
+                        <span class="tooltiptext">HTML – confident 🛠️</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=css" alt="CSS">
+                        <span class="tooltiptext">CSS – intermediate 🛠️</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=latex" alt="LaTeX">
+                        <span class="tooltiptext">LaTeX – intermediate 🛠️🧪</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=cpp" alt="C++">
+                        <span class="tooltiptext">C++ – basics 🛠️</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=arduino" alt="Arduino">
+                        <span class="tooltiptext">Arduino – basics 🛠️🧪</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
+                        <span class="tooltiptext">GitHub – confident 🛠️</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=gitlab" alt="GitLab">
+                        <span class="tooltiptext">GitLab – confident 🛠️</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=docker" alt="Docker">
+                        <span class="tooltiptext">Docker – basics 🎓</span>
+                    </div>
+                    <div class="tooltip">
+                        <img src="https://skillicons.dev/icons?i=django" alt="Django">
+                        <span class="tooltiptext">Django – intermediate 🎓🧪</span>
+                    </div>
+
+                </div>
+                <div class="legend t-white poppins" style="margin-top: 1.5rem; font-size: 0.85rem;">
+                    <p>🎓 University | 🛠️ Self-taught | 🧪 Projects</p>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
+{% endblock %}
