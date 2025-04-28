@@ -11,7 +11,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'your-secret-key-here')  # Read from e
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['your-render-name.onrender.com', 'localhost']  # 🛠 Will replace 'your-render-name' after deploy
+ALLOWED_HOSTS = ['Schebs.onrender.com', 'localhost']  # 🛠 Will replace 'your-render-name' after deploy
 
 # Application definition
 INSTALLED_APPS = [
