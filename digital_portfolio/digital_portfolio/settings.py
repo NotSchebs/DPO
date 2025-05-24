@@ -109,4 +109,5 @@ CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'dbq7chuml',
     'API_KEY': '929578233283723',
     'API_SECRET': 'e5kBqNbDKjPGN1MNbYqY_QYNW30',
+    'RESOURCE_TYPE': 'raw',
 }
