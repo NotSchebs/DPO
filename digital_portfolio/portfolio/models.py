@@ -12,11 +12,10 @@ class Post(models.Model):
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     file = models.FileField(
-        upload_to='blog_files/',
-        blank=True,
-        null=True,
-        storage='portfolio.storages.RawMediaCloudinaryStorage'  # ← korrekt als String
-    )
+    upload_to='blog_files/',
+    blank=True,
+    null=True,
+)
 
     def __str__(self):
         return self.title
