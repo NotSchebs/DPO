@@ -1,5 +1,6 @@
 from django.db import models
 from cloudinary_storage.storage import MediaCloudinaryStorage
+from .storages import RawMediaCloudinaryStorage
 
 # Create your models here.
 class Contact(models.Model):
@@ -12,7 +13,12 @@ class Post(models.Model):
     title = models.CharField(max_length=200)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
-    file = models.FileField(upload_to='blog_files/', blank=True, null=True) 
+    file = models.FileField(
+        upload_to='blog_files/',
+        blank=True,
+        null=True,
+        storage=RawMediaCloudinaryStorage()
+    )
 
 
     def __str__(self):
