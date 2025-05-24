@@ -1,13 +1,11 @@
 from django.db import models
-from cloudinary_storage.storage import MediaCloudinaryStorage
-from .storages import RawMediaCloudinaryStorage
+from cloudinary_storage.storage import MediaCloudinaryStorage  # optional, falls du es anderswo brauchst
 
-# Create your models here.
 class Contact(models.Model):
     name = models.CharField(max_length=40)
     email = models.EmailField(max_length=60)
     content = models.TextField(max_length=400)
-    number=models.CharField(max_length=13)
+    number = models.CharField(max_length=13)
 
 class Post(models.Model):
     title = models.CharField(max_length=200)
@@ -17,9 +15,8 @@ class Post(models.Model):
         upload_to='blog_files/',
         blank=True,
         null=True,
-        storage=RawMediaCloudinaryStorage()
+        storage='portfolio.storages.RawMediaCloudinaryStorage'  # ← korrekt als String
     )
-
 
     def __str__(self):
         return self.title
