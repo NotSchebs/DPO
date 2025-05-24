@@ -106,7 +106,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dein-cloud-name',
-    'API_KEY': 'dein-api-key',
-    'API_SECRET': 'dein-api-secret',
+    'CLOUD_NAME': 'dbq7chuml',
+    'API_KEY': '929578233283723',
+    'API_SECRET': 'e5kBqNbDKjPGN1MNbYqY_QYNW30',
 }
