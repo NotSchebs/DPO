@@ -25,7 +25,9 @@
     <!-- File download -->
     <div class="t-center mt-5 mb-5">
         <p class="t-white poppins">
-            <a href="{{ post.file.url }}" class="btn" download>Download attached file</a>
+            <a href="{{ post.file.url|add:'?fl_attachment=' }}" class="btn" download>
+    Download attached file
+</a>
         </p>
     </div>
     {% endif %}
