@@ -58,9 +58,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'digital_portfolio.wsgi.application'
 
-# Database
+
 DATABASES = {
-    'default': dj_database_url.config(default=f'sqlite:///{BASE_DIR}/db.sqlite3')  # 🛠 Switchable between local and Render PostgreSQL
+    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
 }
 
 # Password validation

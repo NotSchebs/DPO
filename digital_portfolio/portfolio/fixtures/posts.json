@@ -1,0 +1,32 @@
+[
+{
+  "model": "portfolio.post",
+  "pk": 1,
+  "fields": {
+    "title": "Why I Chose Data Science",
+    "content": "As a curious and analytical person, I’ve always been fascinated by the idea of uncovering patterns in data. Whether it's understanding customer behavior, predicting trends, or automating decisions — data science empowers that.\r\n\r\nCurrently in my second semester of studies, I’m learning how to work with Python, R, and machine learning models. It’s both challenging and exciting to turn raw data into meaningful insights.\r\n\r\nThis blog is my space to reflect on what I’m learning, share cool projects, and maybe even help someone else who's on a similar path. Thanks for reading — and stay tuned for more posts about Python, portfolio projects, and life as a data science student!",
+    "created_at": "2025-04-14T19:07:49.681Z",
+    "file": ""
+  }
+},
+{
+  "model": "portfolio.post",
+  "pk": 2,
+  "fields": {
+    "title": "Reflection on the Data Science Internship / Working Student Position at Sika",
+    "content": "This opportunity at Sika interests me more than many others because of the company’s scale, diversity, and the real-world relevance of its work. Sika’s presence across a wide range of industries offers the chance to engage with impactful, meaningful applications of technology in an international environment. The role’s flexibility, allowing for part-time work alongside university studies, is especially appealing. It presents a unique opportunity to contribute to ongoing innovation while gaining valuable experience in a multicultural team and learning directly from experienced tech leads. I am also drawn to the structured nature of the projects, particularly since they can be aligned with academic requirements and possibly count towards credits.\r\n\r\nThe position aligns well with my current academic path and technical competencies. I have hands-on experience with several programming languages, including Python, Java, R, and some C++, and have used them extensively during my studies at FHNW. While I am not yet fully proficient in database technologies and SQL, I will be studying these topics in the upcoming semester. I already have a solid foundation in data science and engineering, having worked on projects involving machine learning, clustering, and neural networks. I am a quick learner with a strong problem-solving mindset, and I speak English, German, French, and Spanish fluently—something I believe is an asset in Sika’s diverse work environment.\r\n\r\nLooking ahead, I hope to grow into a role where I am not only learning but also contributing meaningfully to Sika’s projects and goals. I am highly motivated, eager to take on new challenges, and committed to delivering results. My goal is to become a valuable part of the team and to potentially continue working at Sika long term, helping to drive innovation and digital transformation in a company that already leads in so many areas.",
+    "created_at": "2025-04-23T10:27:51.074Z",
+    "file": "blog_files/stelle.zip"
+  }
+},
+{
+  "model": "portfolio.post",
+  "pk": 3,
+  "fields": {
+    "title": "Reflection on the Skills Audit",
+    "content": "Skills Audit from: https://careersmart.org.uk/career-test-skills-audit-part-1\r\n\r\nThe CareerSmart Skills Audit provided helpful insights into areas I should focus on to continue developing professionally: commercial awareness, communication skills, and personal development planning. Most of the results were accurate and reflected my current self-perception.\r\n\r\nCommercial awareness was highlighted as a key area for growth, and I agree. While I have a strong technical foundation, I haven’t yet had the opportunity to apply these skills in a real business setting. Understanding how companies operate, remain competitive, and how my work can contribute to broader commercial objectives is something I still need to develop. For a data science role, especially at a global company like Sika, this kind of awareness is crucial for turning data into actionable, strategic insight. I believe this understanding will naturally improve with time and real-world experience as I transition into the professional world.\r\n\r\nCommunication skills were also identified as an area to improve, particularly in presenting ideas clearly and managing interpersonal interactions. I’m comfortable in academic and informal contexts, but I know it’s essential to adapt my communication to different audiences and become more assertive in professional settings.\r\n\r\nFinally, the audit flagged personal development planning. While I do see myself as structured and goal-oriented, I acknowledge that there’s always room to reflect on how actively I shape and manage my growth. This feedback was a good reminder to periodically reevaluate whether I’m being proactive enough in identifying learning opportunities and tracking progress.\r\n\r\nRather than viewing these areas as weaknesses, I see them as growth potential. With focused effort, I’m confident I can develop these skills and become a well-rounded and effective data professional.",
+    "created_at": "2025-04-23T11:29:02.521Z",
+    "file": "blog_files/Career_test__Skills_audit_-_Results___Careersmart.pdf"
+  }
+}
+]
